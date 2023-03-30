@@ -88,7 +88,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+// else diyip exception'u production da kullanacaðýz
+app.UseCustomException();
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
